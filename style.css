@@ -15,9 +15,10 @@
 
 body {
     font-family: 'Fredoka', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Pixel-style font for UI elements */

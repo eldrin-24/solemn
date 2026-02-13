@@ -50,7 +50,7 @@ export default function Page() {
   };
 
   return (
-    <>
+    <div className="react-app">
       <div className="scene">
         <div className="bg-blob blob-1" />
         <div className="bg-blob blob-2" />
@@ -99,7 +99,6 @@ export default function Page() {
                   <p className="subtitle">The sunset is even more beautiful now</p>
                 </>
               )}
-
               <button
                 type="button"
                 className={`envelope-button ${envelopeOpen ? "open" : ""}`}
@@ -176,6 +175,6 @@ export default function Page() {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }

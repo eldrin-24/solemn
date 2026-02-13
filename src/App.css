@@ -30,6 +30,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Fredoka", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100%;
+  display: block;
+  padding: 0;
+  overflow: visible;
+}
+
+.react-app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 64px;
   background: linear-gradient(180deg, 
     #FFB6C1 0%,
     #FFC9CB 25%,
@@ -37,20 +57,6 @@ body {
     #FFEAE0 75%,
     #FFF8DC 100%);
   color: #8B4F66;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-#root {
-  min-height: 100vh;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  overflow: hidden;
 }
 
 /* ========================================
@@ -362,7 +368,7 @@ body {
    ENVELOPE STYLING
    ======================================== */
 
-.envelope-button {
+#root .react-app .envelope-button {
   margin-top: 18px;
   border: none;
   background: transparent;
@@ -371,11 +377,11 @@ body {
   transition: transform 0.3s ease;
 }
 
-.envelope-button:hover {
+#root .react-app .envelope-button:hover {
   transform: translateY(-4px);
 }
 
-.envelope {
+#root .react-app .envelope {
   position: relative;
   width: 340px;
   height: 220px;
@@ -385,7 +391,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.envelope-back {
+#root .react-app .envelope-back {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, #FFB6C1, #FFC9D4);
@@ -396,7 +402,7 @@ body {
   z-index: 1;
 }
 
-.envelope-pocket {
+#root .react-app .envelope-pocket {
   position: absolute;
   inset: 0;
   border-radius: 12px;
@@ -406,7 +412,7 @@ body {
   z-index: 3;
 }
 
-.envelope-flap {
+#root .react-app .envelope-flap {
   position: absolute;
   inset: 0;
   border-radius: 12px;
@@ -418,7 +424,7 @@ body {
   box-shadow: 0 6px 16px rgba(216, 89, 157, 0.3);
 }
 
-.envelope-seal {
+#root .react-app .envelope-seal {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -428,7 +434,7 @@ body {
   z-index: 10;
 }
 
-.letter {
+#root .react-app .letter {
   position: absolute;
   left: 16px;
   right: 16px;
@@ -445,14 +451,14 @@ body {
   overflow-y: auto;
 }
 
-.letter-content {
+#root .react-app .letter-content {
   padding: 20px 20px 16px;
   font-size: 0.95rem;
   color: #2b2b2b;
   line-height: 1.6;
 }
 
-.letter-date {
+#root .react-app .letter-date {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -461,19 +467,19 @@ body {
   font-weight: 700;
 }
 
-.letter-body {
+#root .react-app .letter-body {
   color: #2b2b2b;
   opacity: 1;
   margin: 0 0 8px;
 }
 
-.letter-sign {
+#root .react-app .letter-sign {
   margin: 10px 0 0;
   font-weight: 700;
   color: #D8599D;
 }
 
-.letter-name {
+#root .react-app .letter-name {
   margin: 2px 0 0;
   font-weight: 700;
   background: linear-gradient(135deg, #D8599D, #FFB6C1);
@@ -482,21 +488,21 @@ body {
   background-clip: text;
 }
 
-.envelope.open .letter {
+#root .react-app .envelope.open .letter {
   transform: translateY(-55%);
   visibility: visible;
 }
 
-.envelope.open .envelope-flap {
+#root .react-app .envelope.open .envelope-flap {
   transform: rotateX(-180deg);
 }
 
-.envelope.open .envelope-seal {
+#root .react-app .envelope.open .envelope-seal {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.tap-note {
+#root .react-app .tap-note {
   margin: 14px 0 0;
   font-size: 0.95rem;
   color: #A67B8C;
@@ -509,7 +515,7 @@ body {
    ======================================== */
 
 /* Main dialogue scene wrapper with background image */
-.dialogue-scene-wrapper {
+#root .react-app .dialogue-scene-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -526,12 +532,12 @@ body {
   z-index: 1;
 }
 
-.dialogue-overlay {
+#root .react-app .dialogue-overlay {
   display: none;
 }
 
 /* Dialogue box container with glassmorphism effect */
-.dialogue-box-container {
+#root .react-app .dialogue-box-container {
   position: relative;
   z-index: 20;
   background: rgba(255, 248, 220, 0.96);
@@ -547,11 +553,11 @@ body {
   text-align: center;
 }
 
-.dialogue-header {
+#root .react-app .dialogue-header {
   margin-bottom: 14px;
 }
 
-.speaker-name {
+#root .react-app .speaker-name {
   font-size: 0.9rem;
   font-weight: 700;
   color: #D8599D;
@@ -559,7 +565,7 @@ body {
   letter-spacing: 0.15em;
 }
 
-.dialogue-content {
+#root .react-app .dialogue-content {
   margin: 16px 0 20px;
   min-height: auto;
   display: flex;
@@ -567,7 +573,7 @@ body {
   justify-content: center;
 }
 
-.dialogue-text {
+#root .react-app .dialogue-text {
   margin: 0;
   font-size: 1.1rem;
   color: #4a4a4a;
@@ -576,7 +582,7 @@ body {
   animation: text-reveal 0.6s ease;
 }
 
-.dialogue-next {
+#root .react-app .dialogue-next {
   background: linear-gradient(135deg, #FFB6C1, #FFC9D4);
   color: #ffffff;
   border: none;
@@ -589,13 +595,13 @@ body {
   box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
 }
 
-.dialogue-next:hover {
+#root .react-app .dialogue-next:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 16px rgba(255, 182, 193, 0.4);
 }
 
 /* Cute mochi cat image container */
-.cat-container {
+#root .react-app .cat-container {
   position: fixed;
   left: 2%;
   bottom: 5%;
@@ -605,7 +611,7 @@ body {
   justify-content: center;
 }
 
-.cat-image {
+#root .react-app .cat-image {
   width: 220px;
   height: 220px;
   object-fit: contain;
@@ -705,7 +711,7 @@ body {
     height: 170px;
   }
 
-  .envelope {
+  #root .react-app .envelope {
     width: 240px;
     height: 160px;
   }
@@ -715,22 +721,22 @@ body {
   }
 
   /* Mobile dialogue scene adjustments */
-  .dialogue-box-container {
+  #root .react-app .dialogue-box-container {
     width: 85%;
     padding: 24px 28px;
     font-size: 0.95rem;
   }
 
-  .dialogue-text {
+  #root .react-app .dialogue-text {
     font-size: 1rem;
   }
 
-  .cat-container {
+  #root .react-app .cat-container {
     left: 5%;
     width: 120px;
   }
 
-  .cat-image {
+  #root .react-app .cat-image {
     width: 160px;
     height: 160px;
   }
