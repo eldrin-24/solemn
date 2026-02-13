@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="base-url" content="/solemn/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Mountain Tales - Prologue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/solemn/favicon.svg">
+    <link rel="stylesheet" href="/solemn/style.css">
+  <script type="module" crossorigin src="/solemn/assets/main-CIYnLPLl.js"></script>
+  <link rel="stylesheet" crossorigin href="/solemn/assets/main-Bwrfc58M.css">
+</head>
+<body>
+    <!-- Full-screen background scene -->
+    <div class="scene-container">
+        <!-- Animated sunset sky -->
+        <div class="sky-background" style="background-image: url('/solemn/sunset-bg.jpg');">
+            <div class="sky-overlay"></div>
+            
+            <!-- Floating clouds -->
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+            
+            <!-- Sun -->
+            <div class="sun"></div>
+        </div>
+
+        <!-- Cat character (bottom-left) -->
+        <div class="cat-character">
+            <div class="cat-container">
+                <img src="/solemn/mochi-cat.png" alt="Mochi Cat" class="cat-image" id="catImage">
+            </div>
+            <span class="cat-name">Eldrin</span>
+        </div>
+
+        <!-- Dialogue box (bottom-center) -->
+        <div class="dialogue-container">
+            <div class="dialogue-box">
+                <div class="dialogue-tape"></div>
+                <div class="dialogue-tape tape-right"></div>
+                <p class="dialogue-text" id="dialogueText"></p>
+                <div class="dialogue-speaker" id="dialogueSpeaker"></div>
+            </div>
+        </div>
+
+        <!-- Interactive buttons container -->
+        <div class="buttons-container" id="buttonsContainer"></div>
+
+        <!-- Envelope element (hidden initially) -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-body">
+                <div class="envelope-front"></div>
+                <div class="envelope-seal">❤</div>
+                <div class="envelope-flap"></div>
+            </div>
+        </div>
+
+        <!-- Message overlay (for envelope content) -->
+        <div class="message-overlay" id="messageOverlay">
+            <div class="message-card">
+                <p id="messageText"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="root"></div>
+
+    <script src="/solemn/script.js"></script>
+</body>
+</html>
