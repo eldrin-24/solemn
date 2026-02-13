@@ -14,12 +14,12 @@ export default function Page() {
   const baseUrl = import.meta.env.BASE_URL;
   const assetBase = `${window.location.origin}${baseUrl}`;
   const galleryPhotos = [
-    { id: "1", src: new URL("el1.jpg", assetBase).toString(), alt: "" },
-    { id: "2", src: new URL("el2.jpg", assetBase).toString(), alt: "" },
-    { id: "3", src: new URL("el3.jpg", assetBase).toString(), alt: "" },
-    { id: "4", src: new URL("el4.jpg", assetBase).toString(), alt: "" },
-    { id: "5", src: new URL("el5.jpg", assetBase).toString(), alt: "" },
-    { id: "6", src: new URL("el6.jpg", assetBase).toString(), alt: "" },
+    { id: "1", src: new URL("sol1.jpg", assetBase).toString(), alt: "" },
+    { id: "2", src: new URL("sol2.jpg", assetBase).toString(), alt: "" },
+    { id: "3", src: new URL("sol3.jpg", assetBase).toString(), alt: "" },
+    { id: "4", src: new URL("sol4.jpg", assetBase).toString(), alt: "" },
+    { id: "5", src: new URL("sol5.jpg", assetBase).toString(), alt: "" },
+    { id: "6", src: new URL("sol6.jpg", assetBase).toString(), alt: "" },
   ];
 
   const handleNoClick = () => {
@@ -115,10 +115,10 @@ export default function Page() {
                     <div className="letter-content">
                       <p className="letter-date">Feb 14, 2026</p>
                       <p className="letter-body">
-                        Happy valentine's day my baby!! i made this little website just for u and i really hope you like it. i'm not the best at stuff like this but I wanted to do something special that shows how much you mean to me. just know that i love you so much, and every single day i find more reasons to love you even more. you make me so happy and i'm so grateful for you, always and forever.
+                        Happy Valentine’s Baby, thankyou for making my life more wonderful and meaningful.
                       </p>
                       <p className="letter-sign">yours truly,</p>
-                      <p className="letter-name">eldrin</p>
+                      <p className="letter-name">solemn</p>
                     </div>
                   </div>
                 </div>
@@ -144,11 +144,11 @@ export default function Page() {
             <div className="pixel-hearts pixel-heart-1"></div>
             <div className="pixel-hearts pixel-heart-2"></div>
             <div className="pixel-hearts pixel-heart-3"></div>
-            <div className="badge">From Eldrin the cat</div>
+            <div className="badge">From Solemn the cat</div>
             <img
               className="hero-gif"
-              src={`${baseUrl}el7.gif`}
-              alt="Eldrin"
+              src={`${baseUrl}sol7.png`}
+              alt="Solemn"
             />
             <h1 className="title">Be My Valentine?</h1>
             <p className="subtitle">The sunset awaits your answer...</p>
